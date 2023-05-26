@@ -201,7 +201,7 @@ function tablaDelSeis() {
       var resultado =6*i;
       tabla.push(resultado);
       
-   } return([tabla])
+   } return(tabla)
 
 }
 
@@ -210,11 +210,15 @@ function mayorACien(array) {
    // Recorrerlo y retornar un arreglo con todos los valores mayores a 100 (no incluye el 100).
    // Tu código:
    newarray=[];
-   tabla=[];
+   var indice=0;
+
    for(let i=0;i<array.length;i++){
       if(array[i]>100){
-         
-   }return ([tabla])
+         newarray[indice] = array[i]
+         indice = indice +1
+      } 
+   }
+   return (newarray)
 }
 
 /* ----------------------------------------------------------------------------------
@@ -228,6 +232,30 @@ function breakStatement(num) {
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
+
+   array=[];
+   var numnuevo=0;
+   var cont=0;
+
+   for (let i=1; i<=10 ;i=i+1){
+     
+       if (i===numnuevo){
+         cont=cont+1
+         break 
+       }else {
+         numnuevo=num+2*i;
+      array.push(numnuevo);
+     
+       }
+       
+     
+   }
+   if (cont!=0){
+      return ("Se interrumpió la ejecución")
+   }else{
+      return(array)
+   }
+
 }
 
 function continueStatement(num) {
