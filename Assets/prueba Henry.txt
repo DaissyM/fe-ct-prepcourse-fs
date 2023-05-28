@@ -13,13 +13,13 @@
 
 function mayorMenor(numeros) {
     // tu código aquí
-    var max=Math.max(...numeros);
+
+  var max=Math.max(...numeros);
   var min=Math.min(...numeros);
   var array=[max,min];
   return(array)
     
 }
-
 
 
 
@@ -36,6 +36,7 @@ function mayorMenor(numeros) {
 
 function palabraMasLarga(frases) {
     //Tu código aquí
+    
 }
 
 
