@@ -1,42 +1,16 @@
 
-
-class Profesor {
-  constructor(nombre, edad, cursos, certificados) {
-      // Inicializar las propiedades del Profesor con los valores recibidos como argumento
-      // tu código aquí:
-      this.nombre=nombre;
-      this.edad=edad;
-      this.curso=curso;
-      this.certificados=certificados;
-  }
-
-  getCursos() {
-      // tu código aquí:
-      return(this.curso)
-  }
-
-  addCurso(curso) {
-      // tu código aquí:
-      return(this.curso + '')
-  }
-
-  countCertificados() {
-      // tu código aquí
-      return(this.certificados)
-  }
-
-  addCertificado(nombre, entidad, anio) {
-      // Agregar un objeto: { nombre: nombre, entidad: entidad, anio: anio }
-      // al arreglo de certificados del Profesor.
-      // tu código aquí
-
-     class Objeto extends Persona{
-     }
-     var nuevo=new Objeto(this.addCertificado)
-     nuevo.countCertificados()
-     nuevo.codear()
-  }
+function soloStrings(arregloMixto){
+    // tu código aquí
+var letras=[];
+var letras2=[];
+    for(var i=0;i<arregloMixto.length;i++){
+        if(typeof arregloMixto[i]==='string'){
+            letras.push(arregloMixto[i])
+            
+       
+         }//else {console.log('02')}
+    } 
+    return (letras)
+   
 }
-
-
-(palabraMasLarga(['hola mundodddd','dondeññññññ esta','camilo arya neneppppppppp']))
+console.log(soloStrings(['hola12',5,'tgu',89,'negro']))
